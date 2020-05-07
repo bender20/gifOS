@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.Os</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/lightTheme.css">
+    <link rel="stylesheet" href="./styles/darkTheme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <p class="textBar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+    </header>
+    <main>
+        <section id="logoButtonFind">
+            <div class="logoButton">
+                <img class="logo" src="./img/gifOF_logo.png" alt="logo">
+                <div class="buttons">
+                    <a href="./upload.html"><button class="buttonPink"><h2 class="pBlueRegular">Crear Guifos</h2></button></a>
+                    <div class="boxSelect">
+                        <select id="changeTheme" class="buttonPink a" name="">
+                            <option value=""><h2 class="pBlueRegular">Elegir tema</h2></option>
+                            <option value="day"><h2 class="pBlueRegular">Sailor Day</h2></option>
+                            <option value="night"><h2 class="pBlueRegular">Sailor Night</h2></option>
+                        </select>
+                    </div>
+                    <a id="myGif" class="linkMyGif" href="./mygif.html"><h2 class="pBlueRegular letter">Mis Gifos</h2></a>
+                </div>
+            </div>
+            <div class="find">
+                <div class="findBar"><h1 class="pWhite">Buscar</h1></div>
+                <div class="outBox">
+                    <input id="findBox" class="findBox" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" type="text">
+                    <button id="findButton" disabled class="findButton"><img id="loupe" class="loupe" src="./img/lupa_inactive.svg" alt="buscar"><h2 id="findButtonText" class="pBlueRegularbutton">Buscar</h2></button>
+                </div>
+            </div>
+        </section>
+        <section id="randomGrid">
+            <div class="titleWhite"><h2>Hoy te sugerimos:</h2></div>
+            <div id="gridIdRandom" class="grid">
+                <div id="containerRandom" class="videoContainerRandom">
+                    <div class="videoHastRandom">
+                        <p id="hast" class="pWhite"></p>
+                        <img class="close" src="./img/button3.svg" alt="cierre">
+                    </div>
+                    <img id="video" src="" class="videoRandom"></img>
+
+                </div>
+            </div>            
+        </section>
+        <section id="containerGrid">
+            <div id="titleWhite" class="titleWhite"><h2>Tendencias:</h2></div>
+            <div id="gridIdTrend" class="grid">
+                <div id="container" class="videoContainer">
+                    <img id="video0" src="" class="video"></img>
+                    <div class="videoHast">
+                        <p id="hast0" class="pWhiteEfec"></p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./javascript/random.js"></script>
+    <script src="./javascript/trending.js"></script>
+    <script src="./javascript/find.js"></script>
+    <script src="./javascript/home.js"></script>
+    <script>
+        start();
+    </script>
+</body>
+</html>
