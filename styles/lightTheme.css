@@ -150,7 +150,7 @@ select {
 .findBox {
     width: 88%;
     height: 48px;
-    font-size: 300;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 22px;
@@ -585,6 +585,6 @@ select {
 .close {
     padding-right: 3px;
 }
-.containerGridMyGif.only {
+#containerGridMyGif.containerGridMyGifOnly {
     top: 0;
 }

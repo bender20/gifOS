@@ -19,7 +19,7 @@
 }
 #barLoader span:nth-child(2){
 left:16px;
-animation-delay: .05;
+animation-delay: .05s;
 }
 #barLoader span:nth-child(3){
 left:30px;
