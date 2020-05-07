@@ -42,18 +42,15 @@ function getStreamAndRecord() {
                 console.log("fin de grabacion");
                 //document.querySelector("#resultado").src = record;
                 preview = record;
-                console.log(record);
             });
         }
         function prepareToUpload() {
             let form = new FormData();
             form.append("api_key", "HIKUFU492H0mGA1otOdtzQRCTT03fwec");
             form.append("file", recorder.getBlob(), "myGif.gif");
-            console.log(form.get("file"));
             let blob = form.get("file");
             objectURL = URL.createObjectURL(blob);
             localStorage.setItem("url", objectURL);
-            console.log(objectURL);
             function convertToData() {
                 const toDataURL = url => fetch(url)
                     .then(response => response.blob())
@@ -84,7 +81,6 @@ function getStreamAndRecord() {
             buttonGo.style.display ="flex";
             let cronoBox = document.getElementById("cronoBox");
             cronoBox.style.display ="flex";
-            
             const titleChange = document.querySelector("#titleChange");
             titleChange.innerHTML = "Capturando Tu Guifo";
         }
@@ -96,7 +92,7 @@ function getStreamAndRecord() {
             captureVideo.style.display ="none";
             const previewVideo = document.getElementById("previewVideo");
             previewVideo.style.display ="flex";
-            let cronoBox = document.querySelector("#cronoBox2");
+            let cronoBox = document.querySelector("#cronoBoxEnd");
             cronoBox.style.display ="flex";
         }
         let botonStop = document.querySelector("#buttonGo");
@@ -135,7 +131,7 @@ function eventRec() {
 }
 eventRec();
 function goUpload() {
-    location = './upload.html';
+    location = "./upload.html";
 }
 function repeat() {
     const buttonRepeat = document.querySelector("#buttonRepeat");
@@ -164,7 +160,6 @@ function save () {
     link.setAttribute("id", "lin")
     link.style.visibility = 'hidden';
     window.document.body.appendChild(link);
-    console.log(link);
     link.click();
     window.document.body.removeChild(link);
 }

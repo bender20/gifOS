@@ -23,4 +23,3 @@ function trending() {
     return found;
 }
 trending();
-// https://api.giphy.com/v1/gifs/search?api_key=HIKUFU492H0mGA1otOdtzQRCTT03fwec&q=rafa&limit=25&offset=0&rating=G&lang=es

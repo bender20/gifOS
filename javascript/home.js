@@ -37,8 +37,8 @@ function eventFindDay () {
         let buttonFind = document.querySelector("#findButton");
         if (event.target.value === "") {
             buttonFind.setAttribute("disabled", true);
-            document.querySelector(".loupe").src="./img/lupa_inactive.svg";
-            document.querySelector(".pBlueRegularbutton").style.color="#b4b4b4";
+            document.querySelector(".loupe").src="./img/Combined_Shape.svg";
+            document.querySelector(".pBlueRegularbutton").style.color="#8f8f8f";
             document.querySelector(".findButton").style.background="#E6E6E6";
 
         } else {
@@ -55,7 +55,7 @@ function eventFindDark () {
         let buttonFind = document.querySelector("#findButton");
         if (event.target.value === "") {
             buttonFind.setAttribute("disabled", true);
-            document.querySelector(".loupe").src="./img/Combined Shape.svg";
+            document.querySelector(".loupe").src="./img/Combined_Shape.svg";
             document.querySelector(".pBlueRegularbutton").style.color="#8f8f8f";
             document.querySelector(".findButton").style.background="#B4B4B4";
         } else {

@@ -12,7 +12,7 @@ function getSearchResults(search) {
     })
     found.then(function(response) {
         document.querySelector("#gridIdTrend").innerHTML = "";
-        let model = '<div id="container" class="videoContainer"><img id="video0" src="" class="video"></img><div class="videoHast"><p id="hast0" class="pWhiteEfec"></p></div></div>';
+        let model = '<div id="container" class="videoContainer"><img id="video0" src="" class="video" alt="gif buscado"><div class="videoHast"><p id="hast0" class="pWhiteEfec"></p></div></div>';
         arrayFull = response.data;
         arrayFull.forEach(function(elem) {
             const divCreation = document.createElement("div");
@@ -31,12 +31,17 @@ function chageToFind() {
     randomGrid.style.display ="none";
     document.getElementById("titleWhite").innerText = "Busqueda: " + (document.querySelector(".findBox").value);
     document.getElementById("containerGrid").style.top = "40px";
-
 }
 function eventToFind() {
     const findButton = document.querySelector("#findButton");
     findButton.addEventListener("click", getSearchResults);
     findButton.addEventListener("click", chageToFind);
+    let findBox = document.querySelector("#findBox");
+    findBox.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        findButton.click();
+        }
+    });
 }
 eventToFind();
-// https://api.giphy.com/v1/gifs/search?api_key=HIKUFU492H0mGA1otOdtzQRCTT03fwec&q=rafa&limit=25&offset=0&rating=R&lang=es

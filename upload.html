@@ -14,30 +14,27 @@
 <body>
     <header>
         <div class="bar">
-            <p class="textBar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+            <h1 class="textBar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h1>
         </div>
     </header>
     <main>
-        <section id="logoButtonFind">
+        <div id="logoButtonFind">
             <div class="logoButton logoArrow">
                 <a href="./index.html"><img class="arrow" src="./img/arrow.svg" alt="flecha Atrás"></a>
                 <img class="logo" src="./img/gifOF_logo.png" alt="logo">
             </div>
-            <div class="">
-                <div class=""><h1 class=""></h1></div>
-                <div class="">
-                    <div id="findBox" class="" placeholder="" ></div>
-                    <div id="findButton" disabled class=""><img id="loupe" class="" src="" alt=""><h2 id="findButtonText" class=""></h2></div>
-                </div>
+            <div>
+                <div id="findBox"></div>
+                <div id="findButton"><span id="loupe"></span><span id="findButtonText"></span></div>
             </div>
-        </section>
+        </div>
         <section id="gifRec">
             <div class="bigButton">
                 <div class="bigTitle">
-                    <h1 class="pWhite">Crear Guifos</h1>
+                    <h2 class="pWhite">Crear Guifos</h2>
                 </div>
                 <div class="titleIn">
-                    <img class="imgWindows" src="./img/window img.png" alt="window">
+                    <img class="imgWindows" src="./img/window_img.png" alt="window">
                     <h2 class="pBold">Aquí podrás crear tus propios guifos</h2>
                 </div>
                 <div class="bigList">
@@ -49,8 +46,8 @@
                         <p>¿Quieres comenzar a crear tu <span class="pBold">guifo</span> ahora?</p>
                 </div>
                 <div class="twoButton">
-                    <a href="./mygif.html"><button id="cancelButton" class="cancelButton"><h2 class="pBlueRegular">Cancelar</h2></button></a>
-                    <button id="buttonBefore" class="startButton"><h2 class="pBlueRegular">Comenzar</h2></button>
+                    <form action="./mygif.html"><button id="cancelButton" class="cancelButton pBlueRegular">Cancelar</button></form>
+                    <button id="buttonBefore" class="startButton pBlueRegular">Comenzar</button>
                 </div>
             </div>
         </section>
@@ -65,19 +62,19 @@
                 </div>
                 <div class="allButtonCapture cronos">
                     <button id="buttonCapture" class="buttonCapture">
-                        <div class="buttonCamera">
+                        <span class="buttonCamera">
                             <img class="camera" src="./img/camera.svg" alt="Captura">
-                        </div>
-                        <h2 class="pBlueRegular camera">Capturar</h2>
+                        </span>
+                        <span class="pBlueRegular camera">Capturar</span>
                     </button>
                     <div id="cronoBox" class="cronoBox">
                         <h2 id='crono'>00:00:00:00</h2>
                     </div>
                     <button id="buttonGo" class="buttonGo">
-                        <div class="buttonCamera go">
+                        <span class="buttonCamera go">
                             <img src="./img/recording.svg" alt="Captura">
-                        </div>
-                        <h2 class="pBlueRegular go">Listo</h2>
+                        </span>
+                        <span class="pBlueRegular go">Listo</span>
                     </button>
                 </div>
             </div>
@@ -89,18 +86,18 @@
                     <img id="closePreview" class="close" src="./img/button3.svg" alt="cierre">
                 </div>
                 <div class="borderVideo">
-                    <video id="resultado" class="resultado" src="" alt="">
+                    <video id="resultado" class="resultado" src="img"></video>
                 </div>
                 <div class="allButtonUpload">
-                    <div id="cronoBox2" class="cronoBox">
-                        <h2 id='crono2'>00:00:00:00</h2>
+                    <div id="cronoBoxEnd" class="cronoBox">
+                        <p id='cronoEnd'>00:00:00:00</p>
                     </div>
                     <button id="play" class="play"><img src="./img/forward.svg" alt=""></button>
                     <div id="barVideo">
                         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span> <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                     </div>
-                    <button id="buttonRepeat" class="buttonRepeat"><h2 class="pBlueRegular">Repetir Captura</h2></button>
-                    <button id="buttonUpload" class="buttonUpload"><h2 class="pBlueRegular">Subir Guifo</h2></button>
+                    <button id="buttonRepeat" class="buttonRepeat pBlueRegular">Repetir Captura</button>
+                    <button id="buttonUpload" class="buttonUpload pBlueRegular">Subir Guifo</button>
                 </div>
             </div>
         </section>
@@ -111,15 +108,15 @@
                     <img id="closeUpload" class="close" src="./img/button3.svg" alt="cierre">
                 </div>
                 <div class="borderVideo Upload">
-                    <img id="" class="world" src="./img/globe_img.png" alt="">
+                    <img class="world" src="./img/globe_img.png" alt="">
                     <div class="uploadText"><h2 class="pBlueBold">Estamos subiendo tu guifo…</h2></div>
                     <div id="barLoader">
                         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span> <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                     </div>
-                    <div class="timeText"><h2 class="pGreiRegular">Tiempo restante: <strike>38 años</strike> algunos minutos</h2></div>
+                    <div class="timeText"><h2 class="pGreiRegular">Tiempo restante: <span class="labeled">38 años</span> algunos minutos</h2></div>
                 </div>
                 <div class="allButtonCapture">
-                    <a href="./mygif.html"><button id="" class="buttonRepeat"><h2 class="pBlueRegular">Cancelar</h2></button></a>
+                    <form action="./mygif.html"><button class="buttonRepeat pBlueRegular">Cancelar</button></form>
                 </div>
             </div>
         </section>
@@ -131,16 +128,16 @@
                 </div>
                 <div class="BoxResultadoBotones">
                     <div class="borderVideo option">
-                        <img id="resultados" class="resultado" src="" alt="">
+                        <img id="resultados" class="resultado" src="img" alt="gif terminado">
                     </div>
                     <div class="allbuttonRight">
                         <h2 class="pBlueBold">Guifo Subido Con Éxito</h2>
-                        <button id="saveUrl" class="buttonRepeat option"><h2 class="pBlueRegular">Copiar Enlace Guifo</h2></button>
-                        <button id="saveGif" class="buttonRepeat option"><h2 class="pBlueRegular">Descargar Guifo</h2></button>
+                        <button id="saveUrl" class="buttonRepeat option pBlueRegular">Copiar Enlace Guifo</button>
+                        <button id="saveGif" class="buttonRepeat option pBlueRegular">Descargar Guifo</button>
                     </div>
                 </div>
                 <div class="allButtonCapture option">
-                    <button id="buttonListo" class="buttonRepeat"><h2 class="pBlueRegular">Listo</h2></button>
+                    <button id="buttonListo" class="buttonRepeat pBlueRegular">Listo</button>
                 </div>
             </div>
         </section>
@@ -148,13 +145,11 @@
             <div class="titleWhite"><h2>Mis Guifos</h2></div>
             <div id="gridIdMyGif" class="grid">
                 <div id="containerMyGif" class="videoContainer">
-                    <img id="videoMyGif" src="" class="video"></img>
+                    <img id="videoMyGif" src="img" class="video" alt="mis gif">
                 </div>
             </div>            
         </section>
     </main>
-    <footer>
-    </footer>
     <script src="./javascript/home.js"></script>
     <script src="./javascript/myGif.js"></script>
     <script src="./javascript/upLoad.js"></script>

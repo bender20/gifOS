@@ -54,7 +54,7 @@ main {
     background: #E6BBE2;
     border: 1px dotted #110038;
 }
-.buttonPink.a {
+.buttonPink.option {
     width: 167px;
     padding-left: 20px;
 }
@@ -587,4 +587,14 @@ select {
 }
 #containerGridMyGif.containerGridMyGifOnly {
     top: 0;
+}
+.labeled {
+    text-decoration: line-through;
+}
+.play {
+    width: 20px;
+    height: 20px;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 }
