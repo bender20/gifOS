@@ -21,30 +21,29 @@
             <div class="logoButton">
                 <a href="./index.html"><img class="logo" src="./img/gifOF_logo.png" alt="logo"></a>
                 <div class="buttons">
-                    <a href="./upload.html"><button class="buttonPink"><h2 class="pBlueRegular">Crear Guifos</h2></button></a>
+                    <form action="./upload.html"><button id="buttonCreateGif" class="buttonPink pBlueRegular">Crear Guifos</button></form>
                     <div class="boxSelect">
-                        <select class="buttonPink a" name="" id="changeTheme">
-                            <option value=""><h2 class="pBlueRegular">Elegir tema</h2></option>
-                            <option value="day"><h2 class="pBlueRegular">Sailor Day</h2></option>
-                            <option value="night"><h2 class="pBlueRegular">Sailor Night</h2></option>
+                        <select id="changeTheme" class="buttonPink a pBlueRegular">
+                            <option>Elegir tema</option>
+                            <option value="day">Sailor Day</option>
+                            <option value="night">Sailor Night</option>
                         </select>
                     </div>
                     <a id="myGif" class="linkMyGif" href="./mygif.html"><h2 class="pBlueRegular letter">Mis Gifos</h2></a>
                 </div>
             </div>
-            <div class="">
-                <div class=""><h1 class=""></h1></div>
-                <div class="">
-                    <div id="findBox" class="" placeholder="" ></div>
-                    <div id="findButton" disabled class=""><img id="loupe" class="" src="" alt=""><h2 id="findButtonText" class=""></h2></div>
+            <div>
+                <div >
+                    <div id="findBox"></div>
+                    <div id="findButton"><span id="loupe"></span><span id="findButtonText"></span></div>
                 </div>
             </div>
         </section>
-        <section id="containerGridMyGif only">
+        <section id="containerGridMyGif" class="containerGridMyGifOnly">
             <div class="titleWhite"><h2>Mis Guifos</h2></div>
             <div id="gridIdMyGif" class="grid">
                 <div id="containerMyGif" class="videoContainer">
-                    <img id="videoMyGif" src="" class="video"></img>
+                    <img id="videoMyGif" src="img" class="video" alt="gif propios">
                 </div>
             </div>            
         </section>
@@ -53,7 +52,6 @@
     </footer>
     <script src="./javascript/home.js"></script> 
     <script src="./javascript/myGif.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
     <script>
         start();
     </script>

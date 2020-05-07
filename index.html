@@ -20,12 +20,12 @@
             <div class="logoButton">
                 <img class="logo" src="./img/gifOF_logo.png" alt="logo">
                 <div class="buttons">
-                    <a href="./upload.html"><button class="buttonPink"><h2 class="pBlueRegular">Crear Guifos</h2></button></a>
+                    <form action="./upload.html"><button id="buttonCreateGif" class="buttonPink pBlueRegular">Crear Guifos</button></form>
                     <div class="boxSelect">
-                        <select id="changeTheme" class="buttonPink a" name="">
-                            <option value=""><h2 class="pBlueRegular">Elegir tema</h2></option>
-                            <option value="day"><h2 class="pBlueRegular">Sailor Day</h2></option>
-                            <option value="night"><h2 class="pBlueRegular">Sailor Night</h2></option>
+                        <select id="changeTheme" class="buttonPink a pBlueRegular">
+                            <option>Elegir tema</option>
+                            <option value="day">Sailor Day</option>
+                            <option value="night">Sailor Night</option>
                         </select>
                     </div>
                     <a id="myGif" class="linkMyGif" href="./mygif.html"><h2 class="pBlueRegular letter">Mis Gifos</h2></a>
@@ -35,7 +35,7 @@
                 <div class="findBar"><h1 class="pWhite">Buscar</h1></div>
                 <div class="outBox">
                     <input id="findBox" class="findBox" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" type="text">
-                    <button id="findButton" disabled class="findButton"><img id="loupe" class="loupe" src="./img/lupa_inactive.svg" alt="buscar"><h2 id="findButtonText" class="pBlueRegularbutton">Buscar</h2></button>
+                    <button id="findButton" disabled class="findButton"><img id="loupe" class="loupe" src="./img/lupa_inactive.svg" alt="buscar"><span id="findButtonText" class="pBlueRegularbutton">Buscar</span></button>
                 </div>
             </div>
         </section>
@@ -47,8 +47,7 @@
                         <p id="hast" class="pWhite"></p>
                         <img class="close" src="./img/button3.svg" alt="cierre">
                     </div>
-                    <img id="video" src="" class="videoRandom"></img>
-
+                    <img id="video" src="img" class="videoRandom" alt="gif al azar">
                 </div>
             </div>            
         </section>
@@ -56,7 +55,7 @@
             <div id="titleWhite" class="titleWhite"><h2>Tendencias:</h2></div>
             <div id="gridIdTrend" class="grid">
                 <div id="container" class="videoContainer">
-                    <img id="video0" src="" class="video"></img>
+                    <img id="video0" src="img" class="video" alt="gif de tendencias">
                     <div class="videoHast">
                         <p id="hast0" class="pWhiteEfec"></p>
                     </div>
