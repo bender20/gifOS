@@ -40,7 +40,6 @@ function getStreamAndRecord() {
         function stopRec () {
             recorder.stopRecording(function(record){
                 console.log("fin de grabacion");
-                //document.querySelector("#resultado").src = record;
                 preview = record;
             });
         }

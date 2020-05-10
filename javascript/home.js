@@ -40,7 +40,6 @@ function eventFindDay () {
             document.querySelector(".loupe").src="./img/Combined_Shape.svg";
             document.querySelector(".pBlueRegularbutton").style.color="#8f8f8f";
             document.querySelector(".findButton").style.background="#E6E6E6";
-
         } else {
             buttonFind.removeAttribute("disabled");
             document.querySelector(".loupe").src="./img/lupa.svg";

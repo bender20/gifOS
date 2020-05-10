@@ -1,20 +1,12 @@
-let search = null;
-function getSearchResults(search) {
-    search = document.querySelector("#findBox").value;
-    let arrayFull = [];
-    let found = fetch("https://api.giphy.com/v1/gifs/search?api_key=HIKUFU492H0mGA1otOdtzQRCTT03fwec&q=" + search +"&limit=24&offset=0&rating=R&lang=es")
+function getSearchResults() {
+    const search = document.querySelector("#findBox").value;
+    fetch("https://api.giphy.com/v1/gifs/search?api_key=HIKUFU492H0mGA1otOdtzQRCTT03fwec&q=" + search +"&limit=24&offset=0&rating=R&lang=es")
     .then((response) => {
     return response.json()
-    }).then(data => {
-        return data;
-    }).catch((error) => {
-        return error;
-    })
-    found.then(function(response) {
+    }).then(function(response) {
         document.querySelector("#gridIdTrend").innerHTML = "";
         let model = '<div id="container" class="videoContainer"><img id="video0" src="" class="video" alt="gif buscado"><div class="videoHast"><p id="hast0" class="pWhiteEfec"></p></div></div>';
-        arrayFull = response.data;
-        arrayFull.forEach(function(elem) {
+        response.data.forEach(function(elem) {
             const divCreation = document.createElement("div");
             divCreation.innerHTML = model;
             divCreation.querySelector("#video0").src = elem.images.original.url;
@@ -22,9 +14,9 @@ function getSearchResults(search) {
             let gridIdTrend = document.querySelector("#gridIdTrend");
             gridIdTrend.appendChild(divCreation);
         });
-    arrayFull = [];
+    }).catch((error) => {
+        return error;
     });
-    return found;
 }
 function chageToFind() {
     const randomGrid = document.querySelector("#randomGrid");
